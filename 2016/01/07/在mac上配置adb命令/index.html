@@ -5,7 +5,7 @@
 <head>
   <meta charset="utf-8">
   
-  <title>Hello World | Renji Abarai</title>
+  <title>在Mac上配置adb命令 | Renji Abarai</title>
   <meta name="author" content="Renji Abarai">
   
   <meta name="description" content="Just say say">
@@ -13,7 +13,7 @@
   
   <meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1">
 
-  <meta property="og:title" content="Hello World"/>
+  <meta property="og:title" content="在Mac上配置adb命令"/>
   <meta property="og:site_name" content="Renji Abarai"/>
 
   
@@ -217,28 +217,28 @@
     <header>
       
         <div class="icon"></div>
-        <time datetime="2016-01-07T02:35:34.000Z"><a href="/2016/01/07/在mac上配置adb命令/">2016-01-07</a></time>
+        <time datetime="2016-01-07T02:36:59.000Z"><a href="/2016/01/07/在mac上配置adb命令/">2016-01-07</a></time>
       
       
   
-    <h1 class="title">Hello World</h1>
+    <h1 class="title">在Mac上配置adb命令</h1>
   
 
     </header>
     <div class="entry">
       
         <p>###在Mac上配置adb命令</p>
-<p>在Mac OS中使用adb命令时，应进行变量配置，步骤如下：</p>
-<p>##一、终端中输入 cd ~</p>
-<p>##二、输入touch .bash_profile 回车</p>
+<p>在Mac OS中使用adb命令时，应进行变量配置，步骤如下：<br><a id="more"></a></p>
+<p>###一、终端中输入 cd ~</p>
+<p>###二、输入touch .bash_profile 回车</p>
 <p>touch:如果没有，则创建文件，如果有，更新一下文件时间</p>
-<p>##三、输入open -e .bash_profile</p>
+<p>###三、输入open -e .bash_profile</p>
 <p>open:打开文件</p>
 <p>回车后会在TextEdit中打开这个文件（如果未配置过环境变量，应该是个空白文件）。在文件中加如以下内容</p>
 <p>export PATH=${PATH}:/Users/Renji-mac/Library/Android/sdk/platform-tools</p>
 <p>这是我机器上的路径，具体个人机器路径，可右键点击platform-tools–》显示简介  查看</p>
-<p>##四、更新刚配置的环境变量：<br>source .bash_profile</p>
-<p>##五、验证配置是否成功，命令如下：<br>adb devices</p>
+<p>###四、更新刚配置的环境变量：<br>source .bash_profile</p>
+<p>###五、验证配置是否成功，命令如下：<br>adb devices</p>
 
       
     </div>
