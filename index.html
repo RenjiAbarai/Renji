@@ -5,8 +5,8 @@
 <head>
   <meta charset="utf-8">
   
-  <title>renji blog</title>
-  <meta name="author" content="renji">
+  <title>Renji Abarai</title>
+  <meta name="author" content="Renji Abarai">
   
   <meta name="description" content="Just say say">
   
@@ -14,14 +14,14 @@
   <meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1">
 
   
-  <meta property="og:site_name" content="renji blog"/>
+  <meta property="og:site_name" content="Renji Abarai"/>
 
   
     <meta property="og:image" content="undefined"/>
   
 
   <link href="/favicon.ico" rel="icon" type="image/x-ico">
-  <link rel="alternate" href="/atom.xml" title="renji blog" type="application/atom+xml">
+  <link rel="alternate" href="/atom.xml" title="Renji Abarai" type="application/atom+xml">
   <link rel="stylesheet" href="/css/style.css" media="screen" type="text/css">
   <!--[if lt IE 9]><script src="//html5shiv.googlecode.com/svn/trunk/html5.js"></script><![endif]-->
   <script src="//libs.baidu.com/jquery/1.8.0/jquery.min.js"></script>
@@ -31,7 +31,7 @@
 <body>
   <header id="header" class="inner">
 <div class="alignleft">
-  <h1><a href="/">renji blog</a></h1>
+  <h1><a href="/">Renji Abarai</a></h1>
   <h2><a href="/">Just say say</a></h2>
 </div>
 <nav id="main-nav" class="alignright">
@@ -218,11 +218,69 @@
     <header>
       
         <div class="icon"></div>
-        <time datetime="2016-01-04T09:27:35.000Z"><a href="/2016/01/04/hello-world/">2016-01-04</a></time>
+        <time datetime="2016-01-07T02:31:15.000Z"><a href="/2016/01/07/在mac上配置adb命令/">2016-01-07</a></time>
       
       
   
-    <h1 class="title"><a href="/2016/01/04/hello-world/">Hello World</a></h1>
+    <h1 class="title"><a href="/2016/01/07/在mac上配置adb命令/"></a></h1>
+  
+
+    </header>
+    <div class="entry">
+      
+        <p>title: Hello World</p>
+<p>categories: [android笔记]</p>
+<p>在Mac上配置adb命令</p>
+<p>在Mac OS中使用adb命令时，应进行变量配置，步骤如下：</p>
+<p>一、终端中输入 cd ~</p>
+<p>二、输入touch .bash_profile 回车</p>
+<p>touch:如果没有，则创建文件，如果有，更新一下文件时间</p>
+<p>三、输入open -e .bash_profile</p>
+<p>open:打开文件</p>
+<p>回车后会在TextEdit中打开这个文件（如果未配置过环境变量，应该是个空白文件）。在文件中加如以下内容</p>
+<p>export PATH=${PATH}:/Users/Renji-mac/Library/Android/sdk/platform-tools</p>
+<p>这是我机器上的路径，具体个人机器路径，可右键点击platform-tools–》显示简介  查看</p>
+<p>四、更新刚配置的环境变量：<br>source .bash_profile</p>
+<p>五、验证配置是否成功，命令如下：<br>adb devices</p>
+
+      
+    </div>
+    <footer>
+      
+        
+        
+      
+      <div class="clearfix"></div>
+    </footer>
+  </div>
+</article>
+
+
+
+
+  <article class="post">
+  
+    <div class="gallery">
+  <div class="photoset">
+    
+      <img src="">
+    
+  </div>
+  <div class="control">
+    <div class="prev"></div>
+    <div class="next"></div>
+  </div>
+</div>
+  
+  <div class="post-content">
+    <header>
+      
+        <div class="icon"></div>
+        <time datetime="2016-01-06T06:49:57.000Z"><a href="/2016/01/06/hello-world/">2016-01-06</a></time>
+      
+      
+  
+    <h1 class="title"><a href="/2016/01/06/hello-world/">Hello World</a></h1>
   
 
     </header>
@@ -235,7 +293,7 @@
       
         
           <div class="alignleft">
-            <a href="/2016/01/04/hello-world/#more" class="more-link">阅读全文</a>
+            <a href="/2016/01/06/hello-world/#more" class="more-link">阅读全文</a>
           </div>
         
         
