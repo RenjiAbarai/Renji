@@ -218,30 +218,28 @@
     <header>
       
         <div class="icon"></div>
-        <time datetime="2016-01-07T02:31:15.000Z"><a href="/2016/01/07/在mac上配置adb命令/">2016-01-07</a></time>
+        <time datetime="2016-01-07T02:35:34.000Z"><a href="/2016/01/07/在mac上配置adb命令/">2016-01-07</a></time>
       
       
   
-    <h1 class="title"><a href="/2016/01/07/在mac上配置adb命令/"></a></h1>
+    <h1 class="title"><a href="/2016/01/07/在mac上配置adb命令/">Hello World</a></h1>
   
 
     </header>
     <div class="entry">
       
-        <p>title: Hello World</p>
-<p>categories: [android笔记]</p>
-<p>在Mac上配置adb命令</p>
+        <p>###在Mac上配置adb命令</p>
 <p>在Mac OS中使用adb命令时，应进行变量配置，步骤如下：</p>
-<p>一、终端中输入 cd ~</p>
-<p>二、输入touch .bash_profile 回车</p>
+<p>##一、终端中输入 cd ~</p>
+<p>##二、输入touch .bash_profile 回车</p>
 <p>touch:如果没有，则创建文件，如果有，更新一下文件时间</p>
-<p>三、输入open -e .bash_profile</p>
+<p>##三、输入open -e .bash_profile</p>
 <p>open:打开文件</p>
 <p>回车后会在TextEdit中打开这个文件（如果未配置过环境变量，应该是个空白文件）。在文件中加如以下内容</p>
 <p>export PATH=${PATH}:/Users/Renji-mac/Library/Android/sdk/platform-tools</p>
 <p>这是我机器上的路径，具体个人机器路径，可右键点击platform-tools–》显示简介  查看</p>
-<p>四、更新刚配置的环境变量：<br>source .bash_profile</p>
-<p>五、验证配置是否成功，命令如下：<br>adb devices</p>
+<p>##四、更新刚配置的环境变量：<br>source .bash_profile</p>
+<p>##五、验证配置是否成功，命令如下：<br>adb devices</p>
 
       
     </div>
@@ -324,6 +322,8 @@
 <div class="widget tag">
   <h3 class="title">分类</h3>
   <ul class="entry">
+  
+    <li><a href="/categories/android笔记/">android笔记</a><small>1</small></li>
   
     <li><a href="/categories/hexo/">hexo</a><small>1</small></li>
   
