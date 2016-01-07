@@ -217,7 +217,7 @@
     <header>
       
         <div class="icon"></div>
-        <time datetime="2016-01-07T02:41:21.000Z"><a href="/2016/01/07/在mac上配置adb命令/">2016-01-07</a></time>
+        <time datetime="2016-01-07T02:44:46.000Z"><a href="/2016/01/07/在mac上配置adb命令/">2016-01-07</a></time>
       
       
   
@@ -228,10 +228,9 @@
     <div class="entry">
       
         <p>在Mac OS中使用adb命令时，应进行变量配置，步骤如下：</p>
-<h3 id="u7EC8_u7AEF_u4E2D_u8F93_u5165"><a href="#u7EC8_u7AEF_u4E2D_u8F93_u5165" class="headerlink" title="终端中输入"></a>终端中输入</h3><figure class="highlight bash"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line"><span class="built_in">cd</span> ~</span><br></pre></td></tr></table></figure>
-<h3 id="u8F93_u5165"><a href="#u8F93_u5165" class="headerlink" title="输入"></a>输入</h3><figure class="highlight css"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line"><span class="tag">touch</span> <span class="class">.bash_profile</span></span><br></pre></td></tr></table></figure>
+<h3 id="u7EC8_u7AEF_u4E2D_u8F93_u5165"><a href="#u7EC8_u7AEF_u4E2D_u8F93_u5165" class="headerlink" title="终端中输入"></a>终端中输入</h3><figure class="highlight nginx"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br></pre></td><td class="code"><pre><span class="line"><span class="title">cd</span> <span class="regexp">~</span><br><span class="line">touch</span> .bash_profile</span><br></pre></td></tr></table></figure>
 <p>touch:如果没有，则创建文件，如果有，更新一下文件时间<br><a id="more"></a></p>
-<h3 id="u8F93_u5165-1"><a href="#u8F93_u5165-1" class="headerlink" title="输入"></a>输入</h3><figure class="highlight stata"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line"><span class="keyword">open</span> -<span class="keyword">e</span> .bash_profile</span><br></pre></td></tr></table></figure>
+<h3 id="u8F93_u5165"><a href="#u8F93_u5165" class="headerlink" title="输入"></a>输入</h3><figure class="highlight stata"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line"><span class="keyword">open</span> -<span class="keyword">e</span> .bash_profile</span><br></pre></td></tr></table></figure>
 <p>open:打开文件</p>
 <p>回车后会在TextEdit中打开这个文件（如果未配置过环境变量，应该是个空白文件）。在文件中加如以下内容</p>
 <p>export PATH=${PATH}:/Users/Renji-mac/Library/Android/sdk/platform-tools</p>
