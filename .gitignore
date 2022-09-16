@@ -24,4 +24,4 @@ pnpm-debug.log*
 
 package-lock.json
 yarn.lock
-dosc/.vuepress/dist/*
+docs/.vuepress/dist/*
