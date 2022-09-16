@@ -1,0 +1,14 @@
+{
+  "name": "jy-docs",
+  "version": "1.0.0",
+  "description": "",
+  "author": "johnny",
+  "scripts": {
+    "start": "vuepress dev docs",
+    "dev": "vuepress dev docs",
+    "build": "vuepress build docs"
+  },
+  "devDependencies": {
+    "vuepress": "^1.9.7"
+  }
+}
