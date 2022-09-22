@@ -11,6 +11,7 @@ module.exports = {
         logo: '/images/logo.png',
         nav: [
             {text: 'Home', link: '/'},
+            {text: 'docker', link: '/docker/docker'},
             {text: '工具软件', link: '/software/django'},
             {text: '百度', link: 'https://www.baidu.com'},
             // 可指定链接跳转模式：默认target: '_blank'新窗口打开，_self当前窗口打开
