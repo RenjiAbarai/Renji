@@ -18,7 +18,8 @@ jobs:
     steps:
       # Checks-out your repository under $GITHUB_WORKSPACE, so your job can access it
       - uses: actions/checkout@3
-        ref: 'blog'
+        with:
+          BRANCH: blog
 
       - name: Use Node.js
         uses: actions/setup-node@v1
