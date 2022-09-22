@@ -2,7 +2,7 @@ cd ..
 
 rem npm run build
 
-cd dosc/.vuepress/dist
+cd ../dosc/.vuepress/dist
 
 git init
 git add -A
