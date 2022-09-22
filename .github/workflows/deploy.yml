@@ -1,14 +1,10 @@
-# This is a basic workflow to help you get started with Actions
-
 name: Build and deploy
 
-# Controls when the action will run. 
 on:
-  # Triggers the workflow on push or pull request events but only for the main branch
+  # 触发条件1：blog 分支收到 push 后执行任务。
   push:
     branches: [ blog ]
-
-  # Allows you to run this workflow manually from the Actions tab
+  # 触发条件2：手动按钮
   workflow_dispatch:
 
 # A workflow run is made up of one or more jobs that can run sequentially or in parallel
@@ -21,7 +17,7 @@ jobs:
     # Steps represent a sequence of tasks that will be executed as part of the job
     steps:
       # Checks-out your repository under $GITHUB_WORKSPACE, so your job can access it
-      - uses: actions/checkout@v2
+      - uses: actions/checkout@blog
 
       - name: Use Node.js
         uses: actions/setup-node@v1
@@ -42,7 +38,7 @@ jobs:
       # 如果缓存没有命中，安装依赖，根据实际来改，也可以是npm，这里是用的yarn
       - name: Install dependencies
         if: steps.yarn-cache.outputs.cache-hit != 'true'
-        run: yarn
+        run: yarn 
  
       - name: Deploy
         uses: JamesIves/github-pages-deploy-action@releases/v3
