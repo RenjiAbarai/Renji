@@ -1,37 +1,39 @@
-name: Build and deploy
+name: 自动部署
 
 on:
   # 触发条件1：blog 分支收到 push 后执行任务。
   push:
-    branches: [ blog ]
+    branches:
+      - blog
   # 触发条件2：手动按钮
   workflow_dispatch:
 
-# A workflow run is made up of one or more jobs that can run sequentially or in parallel
 jobs:
-  # This workflow contains a single job called "build"
   build:
-    # The type of runner that the job will run on
     runs-on: ubuntu-latest
 
     steps:
-      - name: Setup Checkout
+      - name: 检查分支
         uses: actions/checkout@v3
         with:
-          BRANCH: blog
+          ref: blog
 
-      - name: Setup node
+      - name: 安装Node
         uses: actions/setup-node@v3
         with:
           node-version: "14"
           registry-url: https://registry.npmjs.org
 
-      - name: Setup Build
+      - name: 安装依赖
+        if: steps.cache.outputs.cache-hit != 'true'
         run: |
-            npm install
+          npm install
+
+      - name: 打包构建
+        run: |
             npm run build
 
-      - name: Setup Deploy
+      - name: 部署分支
         uses: JamesIves/github-pages-deploy-action@releases/v3
         with:
           ACCESS_TOKEN: ${{ secrets.ACCESS_TOKEN }}
