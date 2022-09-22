@@ -1,6 +1,6 @@
 cd ..
 
-npm run build
+rem npm run build
 
 cd ../dosc/.vuepress/dist
 
